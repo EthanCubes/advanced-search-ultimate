@@ -5,3 +5,15 @@ body {
 h2 {
     font-size: large;
 }
+
+#optional {
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#optional_toggle {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}

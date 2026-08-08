@@ -7,23 +7,45 @@
     <body>
         <h1>Advanced Search Ultimate</h1>
 
-        <h2>Contains all of the following:</h2>
+        <h2>Contains all of the following (regular search):</h2>
         <input type="text" id="all">
 
         <br>
 
-        <h2>Contains this specific word/phrase:</h2>
+        <h2>Contains this specific word/phrase (optional):</h2>
         <input type="text" id="specific">
 
         <br>
 
-        <h2>Does not contain:</h2>
+        <h2>Does not contain (optional):</h2>
         <input type="text" id="none">
 
         <br>
 
         <h2>Is found on the site (optional):</h2>
         <input type="text" id="site">
+
+        <br>
+
+        <h2 id="optional_toggle">Optional Options</h2>
+        <span id="optional">
+            <h2>File Type</h2>
+            <select id="file">
+                <option value="pdf">Adobe Acrobat Portable Document File (.pdf)</option>
+                <option value="docx">Microsoft Office Word File (.docx)</option>
+                <option value="pptx">Microsoft Office PowerPoint File (.pptx)</option>
+                <option value="xlsx">Microsoft Office Excel File (.xlsx)</option>
+            </select>
+            <br>
+            <h2>In Title</h2>
+            <input type="text" id="title">
+            <br>
+            <h2>In URL</h2>
+            <input type="text" id="url">
+            <br>
+            <h2>In Text</h2>
+            <input type="text" id="text">
+        </span>
 
         <br>
         <br>
@@ -36,6 +58,7 @@
             <option>Yahoo</option>
             <option>Ecosia</option>
         </select>
+        </span>
 
         <br><br>
 

@@ -2,11 +2,17 @@ let query;
 let link;
 let engine = "DuckDuckGo";
 
+let optional_toggle_on = 0;
+
 let queryElements = {
     all: [],
     specific: "",
     none: [],
     site: "",
+    file: "",
+    title: "",
+    url: "",
+    text: "",
 };
 
 const engineIntro = {"DuckDuckGo": "https://www.duckduckgo.com/?q=",
@@ -21,13 +27,25 @@ const all = document.getElementById("all");
 const specific = document.getElementById("specific");
 const none = document.getElementById("none");
 const site = document.getElementById("site");
+const file = document.getElementById("file");
+const title = document.getElementById("title");
+const url = document.getElementById("url");
+const text = document.getElementById("text");
 const searchEngine = document.getElementById("searchEngine")
+
+const optional = document.getElementById("optional");
+const optional_toggle = document.getElementById("optional_toggle");
+optional_toggle.addEventListener("click", function() {optional_toggle_on = 1 - optional_toggle_on; if (optional_toggle_on === 1) {optional.style.display = "block"} else {optional.style.display = "none"};});
 
 function getQueryElements() {
     queryElements.all = all.value.split(/\s+/);
     queryElements.specific = specific.value;
     queryElements.none = none.value.split(/\s+/);
     queryElements.site = site.value;
+    queryElements.file = file.value;
+    queryElements.title = title.value;
+    queryElements.url = url.value;
+    queryElements.text = text.value;
 }
 
 function formQuery() {
@@ -43,7 +61,20 @@ function formQuery() {
     }
 
     if (!(queryElements.site === "")) {
-        query += "site%3A" + queryElements.site; // colon represented with percentage encoding
+        query += "site%3A" + queryElements.site + "%20"; // colon represented with percentage encoding
+    }
+
+    if (!(queryElements.file === "")) {
+        query += "filetype%3A" + queryElements.file + "%20";
+    }
+    if (!(queryElements.title === "")) {
+        query += "intitle%3A" + queryElements.title + "%20";
+    }
+    if (!(queryElements.url === "")) {
+        query += "inurl%3A" + queryElements.url + "%20";
+    }
+    if (!(queryElements.text === "")) {
+        query += "intext%3A" + queryElements.text + "%20";
     }
 }
 
