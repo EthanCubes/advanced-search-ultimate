@@ -35,10 +35,13 @@ function formQuery() {
     for (let i = 0; i < queryElements.all.length; i++) {
         query += queryElements.all[i] + "%20"; //  whitespace represented in percentage encoding for url
     }
+
     query += "\"" + queryElements.specific + "\"" + "%20";
+
     for (let i = 0; i < queryElements.none.length; i++) {
         query += "-" + queryElements.none[i] + "%20"; // minus sign does not require percentage encoding
     }
+
     if (!(queryElements.site === "")) {
         query += "site%3A" + queryElements.site; // colon represented with percentage encoding
     }
@@ -50,16 +53,7 @@ function search() {
     formQuery();
     link = engineIntro[engine] + query;
 
-    //AI code
-    browser.tabs.create({url: link})
-        .then(() => {
-            console.log("tab opened via extension api")
-            window.close();
-        })
-        .catch((error) => {
-            console.log("Failed to open tab: " + error);
-            window.open(link);
-        })
+    window.open(link);
 }
 
 const searchButton = document.getElementById("searchButton");
