@@ -1,35 +1,19 @@
 {
     "manifest_version": 3,
     "name": "Advanced Search Ultimate",
-    "version": "1.0",
-
-    "description": "Makes it easier for users to do advanced searches on alternative search engines like DuckDuckGo and StartPage",
-
+    "author": "EthanCubes",
+    "description": "Easier advanced search without memorization, supports most popular search engines",
+    "version": "1.0.0",
     "icons": {
-        "48": "./assets/search_48.png",
-        "96": "./assets/search_96.png"
+        "48": "assets/search_48.png",
+        "96": "assets/search_96.png"
     },
-
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "advanced-search-ultimate@ethancubes.addons.mozilla.org",
-            "data_collection_permissions": {
-                "required": ["none"]
-            }
-        }
-    },
-
     "permissions": ["tabs"],
-
-    "content_scripts": [
-        {
-            "matches": ["*://*.duckduckgo.com/*"],
-            "js": ["script.js"]
-        }
-    ],
-
     "action": {
-        "default_icon": "./assets/search_48.png",
+        "default_icon": {
+            "48": "assets/search_48.png",
+            "96": "assets/search_96.png"
+        },
         "default_title": "Advanced Search Ultimate",
         "default_popup": "index.html"
     }
