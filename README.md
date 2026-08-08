@@ -10,6 +10,18 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 - Chromium browser extension: (not yet added sry)
 - Just visit the [web page]() to test out all the features of the extension without having to download anything
 
+## How to run locally
+1. Clone the git repo
+2. Open the index.html to get the non-extension version of the extension.
+3. Depending on which browser you use, Chromium-based or Firefox-based, rename the corresponding file to manifest.json. For example, I use LibreWolf, which is based on Firefox, so I would rename `manifest.firefox.json` to `manifest.json`. Manifest.json is required for the extension to work.
+4. Upload the extension (temporarily) to your browser.
+### For Firefox, WaterFox, LibreWolf, etc: 
+1. Go to `about:debugging`, and select "This Firefox". Or "This" whatever browser you use.
+2. Select `Load Temporary Addon`, navigate to the git repo, and select the manifest.json (which you should've renamed from manifest.firefox.json)
+### For Chrome, Edge, Opera, Brave, and other Chromium browsers: 
+1. Go to `chrome://extensions` (or whatever browser you user :// extensions)
+2. Enable developer mode, select "load unpacked extension", navigate to the git repo, and select the manifest.json (which you should've renamed from manifest.chrome.json)
+
 ## Features
 - Generates an advanced search query from user prompts, no memorization required.
 - Brings the user to the search engine page with the prompt entered in.
