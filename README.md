@@ -21,6 +21,8 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 ### For Chrome, Edge, Opera, Brave, and other Chromium browsers: 
 1. Go to `chrome://extensions` (or whatever browser you user :// extensions)
 2. Enable developer mode, select "load unpacked extension", navigate to the git repo, and select the manifest.json (which you should've renamed from manifest.chrome.json)
+### For Safari:
+- Stop using safari.
 
 ## Features
 - Generates an advanced search query from user prompts, no memorization required.

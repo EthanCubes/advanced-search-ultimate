@@ -8,6 +8,15 @@
         "48": "assets/search_48.png",
         "96": "assets/search_96.png"
     },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        },
+        "strict_min_version": "128.0"
+    },
     "permissions": ["tabs"],
     "action": {
         "default_icon": {
