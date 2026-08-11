@@ -11,6 +11,7 @@ The best way to test this extension is to go to the version of the extension hos
 
 ## How to run locally
 Download the extension files from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.0)
+Side note, place the zipped files in a new empty folder before unzipping them to prevent the browser from thinking the other files in the directory are also part of the extension, because Firefox requires me to package the contents instead of the folder that houses the contents.
 ### Chrome and Chromium-Based
 1. Go to the Chrome Extension Page at `chrome://extensions`
 2. You now have 2 options: Importing the CRX file, or importing an unpackaged extension.
