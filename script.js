@@ -42,10 +42,12 @@ function getQueryElements() {
     queryElements.specific = specific.value;
     queryElements.none = none.value.split(/\s+/);
     queryElements.site = site.value;
-    queryElements.file = file.value;
-    queryElements.title = title.value;
-    queryElements.url = url.value;
-    queryElements.text = text.value;
+    if (optional_toggle_on === 1) {
+        queryElements.file = file.value;
+        queryElements.title = title.value;
+        queryElements.url = url.value;
+        queryElements.text = text.value;
+    }
 }
 
 function formQuery() {
@@ -64,17 +66,19 @@ function formQuery() {
         query += "site%3A" + queryElements.site + "%20"; // colon represented with percentage encoding
     }
 
-    if (!(queryElements.file === "")) {
-        query += "filetype%3A" + queryElements.file + "%20";
-    }
-    if (!(queryElements.title === "")) {
-        query += "intitle%3A" + queryElements.title + "%20";
-    }
-    if (!(queryElements.url === "")) {
-        query += "inurl%3A" + queryElements.url + "%20";
-    }
-    if (!(queryElements.text === "")) {
-        query += "intext%3A" + queryElements.text + "%20";
+    if (optional_toggle_on === 1) {
+        if (!(queryElements.file === "")) {
+            query += "filetype%3A" + queryElements.file + "%20";
+        }
+        if (!(queryElements.title === "")) {
+            query += "intitle%3A" + queryElements.title + "%20";
+        }
+        if (!(queryElements.url === "")) {
+            query += "inurl%3A" + queryElements.url + "%20";
+        }
+        if (!(queryElements.text === "")) {
+            query += "intext%3A" + queryElements.text + "%20";
+        }
     }
 }
 
