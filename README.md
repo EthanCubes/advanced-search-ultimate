@@ -1,5 +1,5 @@
 # Advanced Search Ultimate
-A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPage, and other alternative search engines.
+A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPage, and other alternative search engines, since most of them require memorization of a lot of search operators.
 
 ![image of web page with several prompts for advanced searching](screenshots/Screenshot_20260808_171628.png)
 
@@ -34,6 +34,8 @@ The Firefox extension isn't approved yet, so you can't actually import the exten
 - Generates an advanced search query from user prompts, no memorization required.
 - Brings the user to the search engine page with the prompt entered in.
 - Saves time by searching from the browser extension without having to open a new tab to search
+- Saves mental capacity by not requiring memorization
+- Works with most search engines including Google, DuckDuckGo, StartPage, Bing, and Ecosia.
 
 ## How it works
 Essentially, the user inputs search terms that they want to search in the specified fields. The terms are seperated by space (except for the "specific word or phrase" and the website) and sorted into an object containing arrays. The specified modifiers are added to the elements in the array, and the elements all get converted into a single string. It used to be a query that the user could just copy into any search engine, but the query didn't work well in URLs, so the program now uses percentage encoding.
