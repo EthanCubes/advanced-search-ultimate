@@ -3,26 +3,30 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 
 ![image of web page with several prompts for advanced searching](screenshots/Screenshot_20260808_171628.png)
 
-## [Try It](https://ethancubes.github.io/advcanced-search-ultimate/)
+## [Try It](https://ethancubes.github.io/advanced-search-ultimate/)
 
 ## Quickstart
-- Firefox browser extension: (not yet added sry)
-- Chromium browser extension: (not yet added sry)
-- Just visit the [web page]() to test out all the features of the extension without having to download anything
+Note that the extension is not currently on the Firefox or Chrome extension stores, because the Chrome Web Store costs money, and the Firefox store needs some time to confirm the extension is not malware (it's been 2 days and it's still not approved yet.
+The best way to test this extension is to go to the version of the extension hosted as web page on [GitHub Pages](https://ethancubes.github.io/advanced-search-ultimate/), which has all the features of extension, except that it's not an extension.
 
 ## How to run locally
-1. Clone the git repo
-2. Open the index.html to get the non-extension version of the extension.
-3. Depending on which browser you use, Chromium-based or Firefox-based, rename the corresponding file to manifest.json. For example, I use LibreWolf, which is based on Firefox, so I would rename `manifest.firefox.json` to `manifest.json`. Manifest.json is required for the extension to work.
-4. Upload the extension (temporarily) to your browser.
-### For Firefox, WaterFox, LibreWolf, etc: 
-1. Go to `about:debugging`, and select "This Firefox". Or "This" whatever browser you use.
-2. Select `Load Temporary Addon`, navigate to the git repo, and select the manifest.json (which you should've renamed from manifest.firefox.json)
-### For Chrome, Edge, Opera, Brave, and other Chromium browsers: 
-1. Go to `chrome://extensions` (or whatever browser you user :// extensions)
-2. Enable developer mode, select "load unpacked extension", navigate to the git repo, and select the manifest.json (which you should've renamed from manifest.chrome.json)
-### For Safari:
-- Stop using safari.
+### Chrome and Chromium-Based
+1. Go to the Chrome Extension Page at [chrome://extensions](chrome://extensions)
+2. You now have 2 options: Importing the CRX file, or importing an unpackaged extension.
+To import the CRX file:
+1. Download the CRX file from GitHub, and drag the file into the extensions page.
+2. That's it, the extension should be loaded, unless Chrome decides to think the extension is malware, in which case use the next method.
+To import the extensions as an unpacked extension
+1. Download the Chrome version of the extension ZIP file from GitHub. There are two separate versions, MAKE SURE TO SELECT THE CHROME VERSION
+2. Unzip the extension
+3. In the Chrome extensions page, select the option to enable developer mode.
+4. Select load unpacked, and navigate to the unzipped extension. Select the manifest.json inside the unzipped extension folder. That should load the extension onto the browser
+### Firefox and other Gecko-based
+The Firefox extension isn't approved yet, so you can't actually import the extension as a single ZIP file or extension file. Therefore, at least for now, you have to load the unpacked extension.
+1. Download the Firefox version of the extension ZIP file from GitHub. There are two separate versions, MAKE SURE TO SELECT THE FIREFOX VERSION
+2. Unzip the extension
+3. Go to the Firefox debugging page at [about:debugging](about:debugging), go to the "This Firefox" (or "This LibreWolf or whatever) page.
+4. Select `Load temporary addon`, navigate to the extension's manifest.json and select it to load the extension.
 
 ## Features
 - Generates an advanced search query from user prompts, no memorization required.
