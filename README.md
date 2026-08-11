@@ -10,6 +10,7 @@ Note that the extension is not currently on the Firefox or Chrome extension stor
 The best way to test this extension is to go to the version of the extension hosted as web page on [GitHub Pages](https://ethancubes.github.io/advanced-search-ultimate/), which has all the features of extension, except that it's not an extension.
 
 ## How to run locally
+Download the extension files from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.0)
 ### Chrome and Chromium-Based
 1. Go to the Chrome Extension Page at [chrome://extensions](chrome://extensions)
 2. You now have 2 options: Importing the CRX file, or importing an unpackaged extension.
