@@ -12,7 +12,7 @@ The best way to test this extension is to go to the version of the extension hos
 ## How to run locally
 Download the extension files from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.0)
 ### Chrome and Chromium-Based
-1. Go to the Chrome Extension Page at [chrome://extensions](chrome://extensions)
+1. Go to the Chrome Extension Page at `chrome://extensions`
 2. You now have 2 options: Importing the CRX file, or importing an unpackaged extension.
 To import the CRX file:
 1. Download the CRX file from GitHub, and drag the file into the extensions page.
@@ -26,7 +26,7 @@ To import the extensions as an unpacked extension
 The Firefox extension isn't approved yet, so you can't actually import the extension as a single ZIP file or extension file. Therefore, at least for now, you have to load the unpacked extension.
 1. Download the Firefox version of the extension ZIP file from GitHub. There are two separate versions, MAKE SURE TO SELECT THE FIREFOX VERSION
 2. Unzip the extension
-3. Go to the Firefox debugging page at [about:debugging](about:debugging), go to the "This Firefox" (or "This LibreWolf or whatever) page.
+3. Go to the Firefox debugging page at `about:debugging` go to the "This Firefox" (or "This LibreWolf or whatever) page.
 4. Select `Load temporary addon`, navigate to the extension's manifest.json and select it to load the extension.
 
 ## Features
