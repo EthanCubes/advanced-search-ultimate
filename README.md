@@ -6,11 +6,14 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 ## [Try It](https://ethancubes.github.io/advanced-search-ultimate/)
 
 ## Quickstart
-Note that the extension is not currently on the Firefox or Chrome extension stores, because the Chrome Web Store costs money, and the Firefox store needs some time to confirm the extension is not malware (it's been 2 days and it's still not approved yet.
-The best way to test this extension is to go to the version of the extension hosted as web page on [GitHub Pages](https://ethancubes.github.io/advanced-search-ultimate/), which has all the features of extension, except that it's not an extension.
+Note that the extension is not on the Chrome extension stores, because the Chrome Web Store costs money.
+The Mozilla Store link (for Firefox-based browsers) is [here](https://addons.mozilla.org/en-US/firefox/addon/advanced-search-ultimate/).
+An alternative way to test this extension is to go to the version of the extension hosted as web page on [GitHub Pages](https://ethancubes.github.io/advanced-search-ultimate/), which has all the features of extension, except that it's not an extension.
+If you really want the extension version on Chromium, just download the extension files from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.1)
 
 ## How to run locally
 Download the extension files from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.1)
+It's definitely easiest to just install them in their packaged format, but if you really want to "build" them from scratch, then uhhh... keep reading IG.
 Side note, place the zipped files in a new empty folder before unzipping them to prevent the browser from thinking the other files in the directory are also part of the extension, because Firefox requires me to package the contents instead of the folder that houses the contents.
 ### Chrome and Chromium-Based
 1. Go to the Chrome Extension Page at `chrome://extensions`
@@ -42,7 +45,7 @@ Essentially, the user inputs search terms that they want to search in the specif
 
 A prefix is added to the string according to which search engine is selected, and the user is directed to a search page of the selected search engine with the query entered.
 
-This improves on effiency by allowing not requiring users to have to memorize the advanced search operators, with the bonus of being able to search from every site.
+This improves on efficiency by allowing not requiring users to have to memorize the advanced search operators, with the bonus of being able to search from every site.
 
 ## Credits
 - Favicon icon from [Google Fonts Material Symbols and Icons](https://fonts.google.com/icons), converted from .png to .ico with [CloudConvert](https://cloudconvert.com/png-to-ico).
