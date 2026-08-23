@@ -35,6 +35,14 @@ button {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.short_form {
+    width: 4rem;
+}
+
+.inline_text {
+    display: inline;
+}
+
 #optional {
     display: none;
     padding-left: 2%;
