@@ -110,3 +110,16 @@ function search() {
 
 const searchButton = document.getElementById("searchButton");
 searchButton.addEventListener("click", search);
+
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", () => {
+    all.value = "";
+    specific.value = "";
+    none.value = "";
+    site.value = "";
+    file.value = "";
+    title.value = "";
+    url.value = "";
+    text.value = "";
+});
+
