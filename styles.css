@@ -62,3 +62,14 @@ button {
     cursor: pointer;
     text-decoration: underline;
 }
+
+#popup {
+    display: inline;
+    border-radius: 5px;
+    background-color: #120f2e;
+    padding: 1rem;
+
+    position: absolute;
+    top: 420px;
+    left: 10px;
+}

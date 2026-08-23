@@ -128,6 +128,8 @@ clearButton.addEventListener("click", () => {
 
 setInterval(check_button_status, 10);
 
+let searchValid;
+
 function check_button_status() {
     getQueryElements();
     if (formQuery() == 0) {
@@ -135,11 +137,28 @@ function check_button_status() {
         searchButton.style.cursor = "pointer";
         searchButton.style.backgroundColor = "#f4ebb9";
         searchButton.style.color = "black";
+        searchValid = true;
     }
     else {
         searchButton.disabled = true;
         searchButton.style.cursor = "not-allowed";
         searchButton.style.backgroundColor = "#1f1f39";
         searchButton.style.color = "#85848f";
+        searchValid = false;
     }
 }
+
+const popup = document.getElementById("popup");
+popup.style.display = "none";
+
+searchButton.addEventListener("mouseover", () => {
+    if (!searchValid) {
+        popup.style.display = "inline";
+    }
+    else {
+        popup.style.display = "none";
+    }
+});
+searchButton.addEventListener("mouseout", () => {
+    popup.style.display = "none";
+});
