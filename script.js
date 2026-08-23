@@ -140,3 +140,17 @@ function generate_tip() {
     let number = Math.floor(Math.random()*tips.length);
     message.innerHTML = tips[number];
 };
+
+setInterval(check_button_status, 10);
+
+function check_button_status() {
+    getQueryElements();
+    if (formQuery() == 0) {
+        searchButton.disabled = false;
+        searchButton.style.cursor = "pointer";
+    }
+    else {
+        searchButton.disabled = true;
+        searchButton.style.cursor = "not-allowed";
+    }
+}
