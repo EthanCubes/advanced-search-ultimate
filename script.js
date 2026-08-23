@@ -46,8 +46,6 @@ document.addEventListener("keypress", function(event) {
 const tips = ["Tip: Non-required fields are not required!", "Tip: Press enter to search", "Tip: You can't search when a required field is blank"];
 const warnings = ["Required field left blank"]
 
-generate_tip();
-
 function getQueryElements() {
     queryElements.all = all.value.split(/\s+/);
     queryElements.specific = specific.value;
@@ -103,7 +101,6 @@ function formQuery() {
 }
 
 function search() {
-    generate_tip();
     engine = searchEngine.value;
     getQueryElements();
     let status = formQuery();
@@ -111,9 +108,6 @@ function search() {
         link = engineIntro[engine] + query;
 
         window.open(link);
-    }
-    else {
-        display_warning(0);
     }
 }
 
@@ -131,15 +125,6 @@ clearButton.addEventListener("click", () => {
     url.value = "";
     text.value = "";
 });
-
-function display_warning(warning) {
-    message.innerHTML = warnings[warning]
-}
-
-function generate_tip() {
-    let number = Math.floor(Math.random()*tips.length);
-    message.innerHTML = tips[number];
-};
 
 setInterval(check_button_status, 10);
 
