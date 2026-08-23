@@ -11,17 +11,17 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 - Manual Install: If you want to install the Chrome version of the extension, check out the ["How to run locally"](#how-to-run-locally) section, since it costs money to put an extension on the Chrome Web Store.
 
 ## How to run locally
-Download the packaged extension for both Chrome and Firefox from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.1). For Firefox, download the ZIP file. For Chrome, install the .crx file.
-### Chrome and Chromium-Based
+Download the packaged extension for both Chrome and Firefox from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.1.2). For Firefox, download the ZIP file. For Chrome, install the .crx file.
+### Chrome and Chromium-Based (Like Edge, Opera, Brave)
 1. Go to the Chrome Extension Page at [chrome://extensions](chrome://extensions)
 2. Drag the .crx file into the window to install it. 
 3. You will probably be warned that the extension is unsafe. As far as I know, this extension is perfectly safe, so I'd personally ignore it.
-### Firefox and Firefox-based
+### Firefox and Firefox-based (Like Waterfox, LibreWolf)
 It's easiest and recommended to download from the Mozilla Store, [here](https://addons.mozilla.org/en-US/firefox/addon/advanced-search-ultimate/).
-1. Download the Firefox version of the extension ZIP file from GitHub. There are two separate versions, MAKE SURE TO SELECT THE FIREFOX VERSION
-2. Unzip the extension
-3. Go to the Firefox debugging page at `about:debugging` go to the "This Firefox" (or "This LibreWolf or whatever) page.
-4. Select `Load temporary addon`, navigate to the extension's manifest.json and select it to load the extension.
+1. Download the .xpi file version of the extension from GitHub. 
+2. Drag the .xpi file into the Firefox extensions page at [about:addons](about:addons)
+### Safari
+Download Firefox [here](https://www.firefox.com/)
 ### (Backup, not recommended) Load Unpacked Extension
 1. Download the ZIP file version of the extension from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.1). Extract the zip file into any empty directory.
 #### Chrome & Chromium-Based
@@ -51,6 +51,6 @@ This improves on efficiency by allowing not requiring users to have to memorize 
 - [Wikipedia](https://en.wikipedia.org/wiki/Percent-encoding) and [arenasbob2024-cell on Dev.to](https://dev.to/arenasbob2024cell/url-encoding-explained-what-20-3a-and-2f-actually-mean-8nh) helped with researching how URLs work. They're actually pretty interesting.
 - [Google's Advanced Search](https://www.google.com/advanced_search) was a good reference. 
 - [Stack Overflow](https://stackoverflow.com/questions/16503879/chrome-extension-how-to-open-a-link-in-new-tab)
-- The font used was [Cairo](https://fonts.google.com/specimen/Cairo).
-- The popup design and color scheme are inspired by the [Hack Club Stardance Website](stardance.hackclub.com)
-- Colors were extracted from the Stardance website using [kColorChooser](https://apps.kde.org/kcolorchooser/)
+- This project uses the [Cairo](https://fonts.google.com/specimen/Cairo) font.
+- The popup design and color scheme are inspired by/copied from the [Hack Club Stardance Website](stardance.hackclub.com).
+- Colors were extracted from the Stardance website using [kColorChooser](https://apps.kde.org/kcolorchooser/).
