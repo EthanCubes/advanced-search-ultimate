@@ -70,6 +70,7 @@ function formQuery() {
     }
 
     if (queryElements.specific != "") {
+        status = 0;
         query += "\"" + queryElements.specific + "\"" + "%20";
     }
 
