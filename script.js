@@ -134,11 +134,9 @@ clearButton.addEventListener("click", () => {
 
 function display_warning(warning) {
     message.innerHTML = warnings[warning]
-    message.style.border = "2px solid red";
 }
 
 function generate_tip() {
     let number = Math.floor(Math.random()*tips.length);
     message.innerHTML = tips[number];
-    message.style.border = "2px solid blue";
 };

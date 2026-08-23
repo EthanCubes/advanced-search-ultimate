@@ -1,7 +1,8 @@
+/* I want to clone the Stardance UI, because they look good */
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif; 
+    font-family: "Cairo", Arial, Helvetica, sans-serif; 
     color: white;
-    background-color: rgb(50, 50, 65);
+    background-color: #0b0920;
 }
 
 ::placeholder {
@@ -14,25 +15,32 @@ h2 {
 }
 
 input {
+    padding: 0px, 16px;
     width: 20rem;
-    background-color: rgb(100, 100, 100);
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    height: 2rem;
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #343651;
 }
 
 select {
-    background-color: rgb(100, 100, 100);
-    color: white;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    border-radius: 5px;
+    background-color: #f4ebb9;
+    color: black;
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 2px 2.5rem;
 }
 
 button {
-    background-color: rgb(100, 100, 100);
-    border-radius: 5px;
-    color: white;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    background-color: #f4ebb9;
+    font-weight: bold;
+    padding: 2px 2.5em;
 }
 
 .short_form {
@@ -46,8 +54,9 @@ button {
 #message {
     display: inline-block;
     border-radius: 10px;
-    border: 2px solid blue;
+    border: 2px solid #5e6687;
     padding: 5px;
+    background-color: #3c4061;
 }
 
 #optional {
