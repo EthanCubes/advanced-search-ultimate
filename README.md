@@ -51,3 +51,4 @@ This improves on efficiency by allowing not requiring users to have to memorize 
 - [Wikipedia](https://en.wikipedia.org/wiki/Percent-encoding) and [arenasbob2024-cell on Dev.to](https://dev.to/arenasbob2024cell/url-encoding-explained-what-20-3a-and-2f-actually-mean-8nh) helped with researching how URLs work. They're actually pretty interesting.
 - [Google's Advanced Search](https://www.google.com/advanced_search) was a good reference. 
 - [Stack Overflow](https://stackoverflow.com/questions/16503879/chrome-extension-how-to-open-a-link-in-new-tab)
+- The font used was [Roboto](https://fonts.google.com/specimen/Roboto). I usually don't like stuff made by Google but whatever.
