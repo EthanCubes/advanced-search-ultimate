@@ -1,9 +1,38 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif; 
+    color: white;
+    background-color: rgb(50, 50, 65);
+}
+
+::placeholder {
+    color: rgb(175, 175, 175);
+    opacity: 1;
+}
+
 h2 {
     font-size: large;
 }
 
 input {
     width: 20rem;
+    background-color: rgb(100, 100, 100);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+select {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    color: white;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 #optional {
