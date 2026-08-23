@@ -57,9 +57,13 @@ function getQueryElements() {
 }
 
 function formQuery() {
+    let status = 0;
     query = "";
     for (let i = 0; i < queryElements.all.length; i++) {
         query += queryElements.all[i] + "%20"; //  whitespace represented in percentage encoding for url
+    }
+    if (query === "%20") {
+        status = 1;
     }
 
     query += "\"" + queryElements.specific + "\"" + "%20";
@@ -86,15 +90,18 @@ function formQuery() {
             query += "intext%3A" + queryElements.text + "%20";
         }
     }
+    return status;
 }
 
 function search() {
     engine = searchEngine.value;
     getQueryElements();
-    formQuery();
-    link = engineIntro[engine] + query;
+    let status = formQuery();
+    if (status == 0) {
+        link = engineIntro[engine] + query;
 
-    window.open(link);
+        window.open(link);
+    };
 }
 
 const searchButton = document.getElementById("searchButton");
