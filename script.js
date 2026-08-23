@@ -35,7 +35,17 @@ const searchEngine = document.getElementById("searchEngine");
 
 const optional = document.getElementById("optional");
 const optional_toggle = document.getElementById("optional_toggle");
-optional_toggle.addEventListener("click", function() {optional_toggle_on = 1 - optional_toggle_on; if (optional_toggle_on === 1) {optional.style.display = "block"} else {optional.style.display = "none"};});
+optional_toggle.addEventListener("click", function() {
+    optional_toggle_on = 1 - optional_toggle_on;
+    if (optional_toggle_on === 1) {
+        popup.style.top = "620px";
+        optional.style.display = "block"
+    }
+    else {
+        popup.style.top = "320px";
+        optional.style.display = "none"
+    };
+});
 
 document.addEventListener("keypress", function(event) {
     if (event.key == "Enter") {
