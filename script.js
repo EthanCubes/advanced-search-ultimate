@@ -148,9 +148,13 @@ function check_button_status() {
     if (formQuery() == 0) {
         searchButton.disabled = false;
         searchButton.style.cursor = "pointer";
+        searchButton.style.backgroundColor = "#f4ebb9";
+        searchButton.style.color = "black";
     }
     else {
         searchButton.disabled = true;
         searchButton.style.cursor = "not-allowed";
+        searchButton.style.backgroundColor = "#1f1f39";
+        searchButton.style.color = "#85848f";
     }
 }
