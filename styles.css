@@ -43,6 +43,13 @@ button {
     display: inline;
 }
 
+#message {
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid blue;
+    padding: 5px;
+}
+
 #optional {
     display: none;
     padding-left: 2%;

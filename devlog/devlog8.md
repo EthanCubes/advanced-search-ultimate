@@ -1,0 +1,3 @@
+# Devlog #8:
+
+When I shipped the project, the feedback from the reviewers was mostly positive, and there was only one real problem: the UI sucks. Which, for the record, I totally agree with. I don't know what I was thinking, shipping a project that looks like someone made it in like 2004. Now, uh... the UI is like 10% better. Yes, it took me 5 hours to do it (I mean, some of the time was spent improving the README to be better). I went through like 10 different versions with different colours, fonts, and text box rounding. If you think one of the themes is better than the current one, please tell me, I need feedback.
