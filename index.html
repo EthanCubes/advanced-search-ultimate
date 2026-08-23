@@ -8,23 +8,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h2>Contains all of the following (regular search)*:</h2>
-        <input type="text" id="all" placeholder="Contains all of the following (regular search)">
+        <h2>Contains all of the following<span style="color: red;">*</span>:</h2>
+        <input type="text" id="all" placeholder="Basically regular search">
 
         <br>
 
-        <h2>Contains this specific word/phrase (optional):</h2>
+        <h2>Contains this specific word/phrase:</h2>
         <input type="text" id="specific" placeholder="Contains specific word/phrase">
 
         <br>
 
-        <h2>Does not contain (optional):</h2>
+        <h2>Does not contain:</h2>
         <input type="text" id="none" placeholder="Does not contain">
 
         <br>
 
-        <h2>Is found on the site (optional):</h2>
-        <input type="text" id="site" placeholder="Site or domain">
+        <h2>Is found on the site:</h2>
+        <input type="text" id="site" placeholder="Site or domain name">
 
         <br>
 
@@ -82,8 +82,8 @@
         &nbsp;&nbsp;&nbsp;
         <button id="clearButton">Clear All Fields</button>
 
-        <h5>* This field is required</h5>
-        <h6>Leave a non-required field blank to ignore it</h6>
+        <h5 style="margin-botton: 0px; padding: 0px; color: red;">* This field is required</h5>
+        <h6 style="margin-top: 0px; padding: 0px">Leave a non-required field blank to ignore it</h6>
 
         <script src="script.js"></script>
     </body>
