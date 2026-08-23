@@ -1,7 +1,7 @@
 # Advanced Search Ultimate
 A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPage, and other alternative search engines, since most of them require memorization of a lot of search operators.
 
-![image of web page with several prompts for advanced searching](screenshots/Screenshot_20260808_171628.png)
+![image of web page with several prompts for advanced searching](screenshots/3-2026-08-23-15.01.png)
 
 ## [Try It Here](https://ethancubes.github.io/advanced-search-ultimate/)
 
