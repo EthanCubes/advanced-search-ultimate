@@ -53,3 +53,4 @@ This improves on efficiency by allowing not requiring users to have to memorize 
 - [Stack Overflow](https://stackoverflow.com/questions/16503879/chrome-extension-how-to-open-a-link-in-new-tab)
 - The font used was [Cairo](https://fonts.google.com/specimen/Cairo).
 - The popup design and color scheme are inspired by the [Hack Club Stardance Website](stardance.hackclub.com)
+- Colors were extracted from the Stardance website using [kColorChooser](https://apps.kde.org/kcolorchooser/)
