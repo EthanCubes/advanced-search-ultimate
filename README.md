@@ -23,7 +23,7 @@ It's easiest and recommended to download from the Mozilla Store, [here](https://
 ### Safari
 Download Firefox [here](https://www.firefox.com/)
 ### (Backup, not recommended) Load Unpacked Extension
-1. Download the ZIP file version of the extension from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.0.1). Extract the zip file into any empty directory.
+1. Download the ZIP file version of the extension from [GitHub](https://github.com/EthanCubes/advanced-search-ultimate/releases/tag/v1.1.2). Extract the zip file into any empty directory.
 #### Chrome & Chromium-Based
 1. Go to the [chrome://extensions](chrome://extensions)
 2. Enable developer mode.
