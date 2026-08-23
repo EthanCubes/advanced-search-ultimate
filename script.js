@@ -66,10 +66,14 @@ function formQuery() {
         status = 1;
     }
 
-    query += "\"" + queryElements.specific + "\"" + "%20";
+    if (queryElements.specific != "") {
+        query += "\"" + queryElements.specific + "\"" + "%20";
+    }
 
-    for (let i = 0; i < queryElements.none.length; i++) {
-        query += "-" + queryElements.none[i] + "%20"; // minus sign does not require percentage encoding
+    if (queryElements.none[0] != "") {
+        for (let i = 0; i < queryElements.none.length; i++) {
+            query += "-" + queryElements.none[i] + "%20"; // minus sign does not require percentage encoding
+        }
     }
 
     if (!(queryElements.site === "")) {
