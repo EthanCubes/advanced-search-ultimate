@@ -23,6 +23,7 @@ input {
     color: white;
     border-radius: 10px;
     background-color: #343651;
+    border: 2px solid #818292;
 }
 
 select {
