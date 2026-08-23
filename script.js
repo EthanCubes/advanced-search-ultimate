@@ -31,11 +31,17 @@ const file = document.getElementById("file");
 const title = document.getElementById("title");
 const url = document.getElementById("url");
 const text = document.getElementById("text");
-const searchEngine = document.getElementById("searchEngine")
+const searchEngine = document.getElementById("searchEngine");
 
 const optional = document.getElementById("optional");
 const optional_toggle = document.getElementById("optional_toggle");
 optional_toggle.addEventListener("click", function() {optional_toggle_on = 1 - optional_toggle_on; if (optional_toggle_on === 1) {optional.style.display = "block"} else {optional.style.display = "none"};});
+
+document.addEventListener("keypress", function(event) {
+    if (event.key == "Enter") {
+        search();
+    }
+});
 
 function getQueryElements() {
     queryElements.all = all.value.split(/\s+/);
