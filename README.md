@@ -1,5 +1,5 @@
 # Advanced Search Ultimate
-A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPage, and other alternative search engines, since most of them require memorization of a lot of search operators.
+A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPage, and other alternative search engines. Removes the need to memorize a lot of search operators.
 
 ![image of web page with several prompts for advanced searching](screenshots/3-2026-08-23-15.01.png)
 
@@ -52,5 +52,5 @@ This improves on efficiency by allowing not requiring users to have to memorize 
 - [Google's Advanced Search](https://www.google.com/advanced_search) was a good reference. 
 - [Stack Overflow](https://stackoverflow.com/questions/16503879/chrome-extension-how-to-open-a-link-in-new-tab)
 - This project uses the [Cairo](https://fonts.google.com/specimen/Cairo) font.
-- The popup design and color scheme are inspired by/copied from the [Hack Club Stardance Website](stardance.hackclub.com).
+- The popup design and color scheme are inspired by the [Hack Club Stardance Website](stardance.hackclub.com).
 - Colors were extracted from the Stardance website using [kColorChooser](https://apps.kde.org/kcolorchooser/).
