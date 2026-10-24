@@ -11,6 +11,11 @@ body {
     opacity: 1;
 }
 
+@font-face {
+    font-family: "Cairo";
+    src: url("assets/Cairo-Font.ttf");
+}
+
 h2 {
     font-size: large;
     margin: 0px;
