@@ -15,12 +15,15 @@ let queryElements = {
     text: "",
 };
 
-const engineIntro = {"DuckDuckGo": "https://www.duckduckgo.com/?q=",
-    "StartPage": "https://www.startpage.com/do/metasearch.pl?query=", 
-    "Google": "https://www.google.com/search?hl=en&q=",
-    "Bing": "https://www.bing.com/search?q=",
-    "Yahoo": "https://search.yahoo.com/search?p=",
-    "Ecosia": "https://www.ecosia.org/search?method=index&q="
+let noaiend = "";
+let noaistart = "";
+
+const engineIntro = {"DuckDuckGo": "duckduckgo.com/?q=",
+    "StartPage": "startpage.com/do/metasearch.pl?query=", 
+    "Google": "google.com/search?hl=en&q=",
+    "Bing": "bing.com/search?q=",
+    "Yahoo": "search.yahoo.com/search?p=",
+    "Ecosia": "ecosia.org/search?method=index&q="
 };
 
 const all = document.getElementById("all");
@@ -32,6 +35,9 @@ const title = document.getElementById("title");
 const url = document.getElementById("url");
 const text = document.getElementById("text");
 const searchEngine = document.getElementById("searchEngine");
+
+const aitoggle = document.getElementById("aitoggle");
+const ailabel = document.getElementById("ailabel");
 
 const optional = document.getElementById("optional");
 const optional_toggle = document.getElementById("optional_toggle");
@@ -52,6 +58,33 @@ document.addEventListener("keypress", function(event) {
         search();
     }
 });
+
+setInterval(function() {
+    let searchEngineSTR = searchEngine.value;
+    if (searchEngineSTR === "Google" || searchEngineSTR === "DuckDuckGo") {
+        aitoggle.style.display = "inline";
+        ailabel.style.display = "inline"
+    }
+    else {
+        aitoggle.style.display = "none";
+        ailabel.style.display = "none";
+        aitoggle.checked = false;
+    }
+    if (aitoggle.checked) {
+        if (searchEngineSTR === "Google") {
+            noaiend = "&udm=14"
+        }
+        else {noaiend = ""}
+        if (searchEngineSTR === "DuckDuckGo") {
+            noaistart = "noai."
+        }
+        else {noaistart = ""}
+    }
+    else {
+        noaistart = "";
+        noaiend = "";
+    }
+}, 10);
 
 const tips = ["Tip: Non-required fields are not required!", "Tip: Press enter to search", "Tip: You can't search when a required field is blank"];
 const warnings = ["Required field left blank"]
@@ -116,7 +149,8 @@ function search() {
     getQueryElements();
     let status = formQuery();
     if (status == 0) {
-        link = engineIntro[engine] + query;
+        link = "https://" + noaistart + engineIntro[engine] + query + noaiend;
+        alert(link);
 
         window.open(link);
     }

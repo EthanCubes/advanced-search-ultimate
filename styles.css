@@ -21,7 +21,7 @@ h2 {
     margin: 0px;
 }
 
-input {
+.textinput {
     padding: 0px, 16px;
     width: 20rem;
     height: 2rem;

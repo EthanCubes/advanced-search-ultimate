@@ -6,22 +6,22 @@
     </head>
     <body>
         <h2>Contains all of the following:</h2>
-        <input type="text" id="all" placeholder="Basically regular search.">
+        <input type="text" id="all" class="textinput" placeholder="Basically regular search.">
 
         <br>
 
         <h2>Contains this specific word/phrase:</h2>
-        <input type="text" id="specific" placeholder="Contains specific word/phrase">
+        <input type="text" id="specific" class="textinput" placeholder="Contains specific word/phrase">
 
         <br>
 
         <h2>Does not contain:</h2>
-        <input type="text" id="none" placeholder="Does not contain">
+        <input type="text" id="none" class="textinput" placeholder="Does not contain">
 
         <br>
 
         <h2>Is found on the site:</h2>
-        <input type="text" id="site" placeholder="Site or domain name">
+        <input type="text" id="site" class="textinput" placeholder="Site or domain name">
 
         <br>
 
@@ -37,13 +37,13 @@
             </select>
             <br>
             <h2>In Title</h2>
-            <input type="text" class="shorter" id="title">
+            <input type="text" class="shorter textinput" id="title">
             <br>
             <h2>In URL</h2>
-            <input type="text" class="shorter" id="url">
+            <input type="text" class="shorter textinput" id="url">
             <br>
             <h2>In Text</h2>
-            <input type="text" class="shorter" id="text">
+            <input type="text" class="shorter textinput" id="text">
         </span>
 
         <select id="searchEngine">
@@ -54,6 +54,11 @@
             <option>Yahoo</option>
             <option>Ecosia</option>
         </select>
+
+        &nbsp;
+        <!-- AI toggle -->
+        <input type="checkbox" id="aitoggle" name="aitoggle">
+        <label for="aitoggle" id="ailabel">Filter AI</label>
 
         <br>
 
