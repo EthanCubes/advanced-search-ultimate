@@ -53,6 +53,10 @@ optional_toggle.addEventListener("click", function() {
     };
 });
 
+// 
+searchEngine.value = localStorage.getItem("lastSearchEngine");
+aitoggle.checked = JSON.parse(localStorage.getItem("lastAIToggle"));
+
 document.addEventListener("keypress", function(event) {
     if (event.key == "Enter") {
         search();
@@ -84,6 +88,8 @@ setInterval(function() {
         noaistart = "";
         noaiend = "";
     }
+    localStorage.setItem("lastSearchEngine", searchEngineSTR);
+    localStorage.setItem("lastAIToggle", aitoggle.checked.toString());
 }, 10);
 
 const tips = ["Tip: Non-required fields are not required!", "Tip: Press enter to search", "Tip: You can't search when a required field is blank"];
