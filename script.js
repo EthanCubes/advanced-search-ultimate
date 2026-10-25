@@ -150,7 +150,6 @@ function search() {
     let status = formQuery();
     if (status == 0) {
         link = "https://" + noaistart + engineIntro[engine] + query + noaiend;
-        alert(link);
 
         window.open(link);
     }
