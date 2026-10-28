@@ -55,6 +55,9 @@ optional_toggle.addEventListener("click", function() {
 
 // 
 searchEngine.value = localStorage.getItem("lastSearchEngine");
+if (searchEngine.value === "") {
+    searchEngine.value = "DuckDuckGo";
+}
 aitoggle.checked = JSON.parse(localStorage.getItem("lastAIToggle"));
 
 document.addEventListener("keypress", function(event) {
@@ -94,6 +97,12 @@ setInterval(function() {
 
 const tips = ["Tip: Non-required fields are not required!", "Tip: Press enter to search", "Tip: You can't search when a required field is blank"];
 const warnings = ["Required field left blank"]
+
+function clear_data() {
+    // Debug option
+    localStorage.setItem("lastSearchEngine", "");
+    localStorage.setItem("lastAIToggle", "");
+}
 
 function getQueryElements() {
     queryElements.all = all.value.split(/\s+/);
