@@ -6,7 +6,7 @@ A webpage/extension that adds easier advanced searching for DuckDuckGo, StartPag
 ## [Try It Here](https://ethancubes.github.io/advanced-search-ultimate/)
 
 ## Quickstart
-- For Firefox: Download from the Mozilla Store [here](https://addons.mozilla.org/en-US/firefox/addon/advanced-search-ultimate/).
+- For Firefox: Download from the Mozilla Store [here](https://addons.mozilla.org/en-US/firefox/addon/advanced-search-ultimate/). Note that the version on the store may be a bit outdated. Most recent version is in the web browser version
 - For Web Browser (without install): The [GitHub Pages](https://ethancubes.github.io/advanced-search-ultimate/), which has all the features of extension, except that it's not an extension. This is the best course of action for Chrome users & Safari users for testing this extension.
 - Manual Install: If you want to install the Chrome version of the extension, check out the ["How to run locally"](#how-to-run-locally) section, since it costs money to put an extension on the Chrome Web Store.
 
